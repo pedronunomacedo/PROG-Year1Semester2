@@ -1,0 +1,6 @@
+vector<float> Purse::possibleCoins = { 2, 1, 0.5F, 0.2F, 0.1F };
+
+Esta definição seria colocada no espaço global do programa.
+
+Neste contexto, o qualitativo static significa que só existe uma instância de possibleCoins para
+todos os objetos da classe Purse.

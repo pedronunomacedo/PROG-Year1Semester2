@@ -1,0 +1,9 @@
+O valor de 'n' usado é superior em 1 unidade ao que era suposto, pois 
+o programa só para de pedir as notas quando for introduzido como nota
+o número menor que 0 e maior que 20 (número inválido na escala de 0 a 20). 
+Mas no código apresentado, este último número está a ser contabilizado em 'n'.
+Portanto, ao fazer a média devemos dividir por (n-1) e não por n.
+
+Assim, para calcular a média deveremos fazer o seguinte:
+
+average = sum / (n-1);

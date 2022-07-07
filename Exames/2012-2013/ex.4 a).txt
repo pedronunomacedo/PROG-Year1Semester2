@@ -1,0 +1,5 @@
+bool fileopen(string filename, ifstream &f)
+{
+	f.open(filename.c_str());
+	return f.is_open();
+}

@@ -1,0 +1,15 @@
+void score(const vector<int> &bet, const vector<int> &key) {
+	unsigned int correct = 0;
+	
+	for (unsigned int i = 0; i <5; i++) {
+		for (unsigned int j = 0; j < 5; j++) {
+			if (bet[i] == key[j]) correct++;
+		}
+	}
+	cout << correct << " + ";
+	correct = 0;
+	for (unsigned int i = 5; i < 7; i++) {
+		if (bet[i] == key[5] || bet[i] == key[6]) correct++;
+	}
+	cout << correct << endl;
+}

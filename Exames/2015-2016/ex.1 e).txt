@@ -1,0 +1,13 @@
+bool Purse::removeCoin(float coin)
+{
+	vector<float>::iterator it = find(coins.begin(), coins.end(), coin);
+	for (unsigned int i = 0; i < coins.size(); i++) {
+		if (coins[i] == coin) {
+			coins.erase(it);
+			amount -= coin;
+			return true;
+		}
+	}
+
+	return false;
+}

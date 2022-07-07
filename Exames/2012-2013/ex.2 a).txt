@@ -1,0 +1,12 @@
+O vetor foi passo 'por valor' e não por referência. Isto é, um vetor ao ser
+passado por valor, é criado uma cópia do vetor original que, por isso mesmo,
+permaneceu inalterado.
+Para corrigir este erro, deveriamos passar o 'vetor por referência'.
+Como se mostra a seguir:
+bool swapElems(vector<int> &v, int i, int j)
+
+Aliás, o teste feito na função swapElems está mal pois, neste caso, o 'i'
+e o 'j' são números inteiros positivos. E, ainda, o 'i' está entre 0 e v.size(),
+e o 'j' está entre 0 e v.size().
+Portanto, para corrigir esta falha deveríamos realizar este teste:
+if (i >= 0 && i < v.size() && j >= 0 && j <= v.size())

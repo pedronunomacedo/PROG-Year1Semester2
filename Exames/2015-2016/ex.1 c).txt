@@ -1,0 +1,5 @@
+Purse::Purse(string owner)
+{
+	this->owner = owner;
+	this->amount = 0;
+}

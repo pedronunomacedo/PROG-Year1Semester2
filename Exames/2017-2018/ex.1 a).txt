@@ -1,0 +1,11 @@
+void toUpperStr(string *s)
+{
+	for (unsigned int i = 0; i < s->lenght(); i++) {
+		if (s->at(i) >= 'a' && s->at(i) <= 'A') // Todas as letras minúsculas
+		{
+			s->at(i) += ('A' - 'a'); // Somar à letra minúscula a diferença entre 'a' e 'A'
+					// que é a mesma diferença entre todas as letras 
+					// minúsculas com todas as letras maiúsculas
+		}
+	}
+}

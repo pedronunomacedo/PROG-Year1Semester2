@@ -1,0 +1,8 @@
+Na 1ª iteração, o dígito 1 foi atribuído a 'grade'; o 'o' ficou no buffer
+do teclado. A segunda leitura de 'grade' falhou porque o 'o' é um caráter
+inválido para um inteiro; a i 'input stream' ficou num estado de erro e,
+daí em diante, todas as tentativas de leitura dão erro.
+
+Uma possível solução seria 'limpar' o buffer de entrada, para retirar o
+'o' que lá ficou - cin.ignore() - e 'limpar' o estado de erro da 'input stream'
+- cin.clear() .

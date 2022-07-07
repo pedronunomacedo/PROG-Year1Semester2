@@ -1,0 +1,8 @@
+class Time {
+public:
+	Time(); // construtor
+	Time(int h, int m, int s); // construtor com parâmetros
+	void show() const;
+private:
+	int h, m, s;
+}

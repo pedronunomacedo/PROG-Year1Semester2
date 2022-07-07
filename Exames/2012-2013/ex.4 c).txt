@@ -1,0 +1,23 @@
+void printBet(const vector<int> &bet) 
+{
+	index = 0;
+	for(unsigned int i = 1; i < 46 ; i++) {
+		if (index < 5 && bet[index] == i) {
+			cout << setw(2) << i << " ";
+			index++;
+		}
+		else { cout <<  "   "; }
+		if ((i & 9) == 0) { cout << endl; }
+	}
+	
+	cout << endl << endl;
+	
+	for (unsigned int i = 0; i < 10; i++) {
+		if (bet[index] == i) {
+			cout << setw(2) << i << " ";
+			index++;
+		}
+		else { cout << "   "; }
+	}
+	cout << endl;S
+}

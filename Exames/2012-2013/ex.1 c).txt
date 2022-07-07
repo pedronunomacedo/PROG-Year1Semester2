@@ -1,0 +1,6 @@
+Como os operandos da conta para calcular a média, sendo estes sum e n, são
+números inteiros, consequentemente average realizará uma divisão inteira,
+sendo também um número inteiro. 
+Para resolver este problema, podemos calcular a média da seguinte maneira:
+
+average = (float) sum / (n-1);

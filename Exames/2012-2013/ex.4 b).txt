@@ -1,0 +1,36 @@
+bool getBets(stirng filename, vector<vector<int>> &vec)
+{
+	int counter = 1;
+	bool error = false;
+	string line;
+	ifstream f;
+	vector<int> bets;
+	
+	fstream f(filename);
+	if (! f.is_open()) return false;
+	
+	while (! f.eof()) {
+		getline(f, line);
+		if (! line.size()) break;		
+
+		stringstream ss(line);
+		
+		bets.clear();
+		while(! ss.eof()) {
+			int n;
+			ss >> n;
+			if (n > 0) bet.push_back(n);
+		}
+		if (bet.size() != 7) {
+			cout << " Error in the bet " <<  contador << " !" << endl;
+			error = true;
+		}
+		else {
+			bets.push_back(bet);
+		}
+	}
+
+	f.close();
+
+	return error;
+}

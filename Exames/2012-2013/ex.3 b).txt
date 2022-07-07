@@ -1,0 +1,13 @@
+Time::Time {
+	h = m = s = 0;
+}
+
+Time::Time(int h, int m, int s) {
+	this->h = h;
+	this->m = m;
+	this->s = s;
+}
+
+void Time::show() const {
+	cout << h << ": << m << ":" << s;
+}

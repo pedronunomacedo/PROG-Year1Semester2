@@ -1,0 +1,7 @@
+void Purse::addCoins(vector<float> coins)
+{
+	for (unsigned int i = 0; i < coins.size(); i++) {
+		this->coins.pushback(coins[i]);
+		amount += coins[i];
+	}
+}
