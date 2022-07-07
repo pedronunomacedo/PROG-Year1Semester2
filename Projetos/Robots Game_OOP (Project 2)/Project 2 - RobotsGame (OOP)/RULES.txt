@@ -1,0 +1,8 @@
+ ------ RULES ------
+ You are placed in a maze made up of hight-voltage fences and posts.
+ There are also some interceptor robots that will try to destroy you.
+ If you touch the maze or any of the robots, you died and its the end of the game. The robots are also destroyed when they touch the fences/posts or when they collide with each other.
+ Every time you move to any direction (horizontally, vertically, or diagnally) to a contiguous cell, each robot moves one cell closer to your location, in wichever direction is the shortest path.
+ The robots have no vision sensors but they have an accurate odour sensor that allows them to follow you!
+ There is one hope! Make the robots hit the maze or each other.
+ If all of them are destroyed, you WIN!
