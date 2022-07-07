@@ -1,0 +1,4 @@
+﻿  Origem.cpp
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 3\ex. 3.5\Origem.cpp(53,27): warning C4101: 'largest': variável local não referenciada
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 3\ex. 3.5\Origem.cpp(53,17): warning C4101: 'smallest': variável local não referenciada
+  ex. 3.5.vcxproj -> D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 3\ex. 3.5\Debug\ex. 3.5.exe

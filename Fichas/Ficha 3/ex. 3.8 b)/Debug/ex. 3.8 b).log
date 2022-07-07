@@ -1,0 +1,4 @@
+﻿  Origem.cpp
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 3\ex. 3.8 b)\Origem.cpp(75,17): warning C4244: 'inicializando': conversão de 'double' para 'int', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 3\ex. 3.8 b)\Origem.cpp(76,19): warning C4244: 'inicializando': conversão de 'double' para 'int', possível perda de dados
+  ex. 3.8 b).vcxproj -> D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 3\ex. 3.8 b)\Debug\ex. 3.8 b).exe

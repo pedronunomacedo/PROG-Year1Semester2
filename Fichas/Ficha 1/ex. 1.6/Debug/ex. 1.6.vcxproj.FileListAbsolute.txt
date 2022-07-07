@@ -1,0 +1,3 @@
+C:\Users\Pedro Macedo\Desktop\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 1\ex. 1.6\Debug\ex. 1.6.exe
+C:\Users\Pedro Macedo\Desktop\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 1\ex. 1.6\Debug\ex. 1.6.pdb
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 1\ex. 1.6\Debug\ex. 1.6.exe

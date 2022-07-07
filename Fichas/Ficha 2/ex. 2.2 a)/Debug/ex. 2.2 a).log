@@ -1,0 +1,4 @@
+﻿  Origem.cpp
+C:\Users\Pedro Macedo\Desktop\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.2 a)\Origem.cpp(20,21): warning C4244: '=': conversão de 'float' para 'char', possível perda de dados
+C:\Users\Pedro Macedo\Desktop\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.2 a)\Origem.cpp(26,21): warning C4244: '=': conversão de 'float' para 'char', possível perda de dados
+C:\Users\Pedro Macedo\Desktop\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.2 a)\Origem.cpp(4): fatal error C1075: '{': nenhum token correspondente encontrado

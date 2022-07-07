@@ -1,0 +1,4 @@
+﻿  Origem.cpp
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.13 c)\Origem.cpp(31,25): warning C4244: '+=': conversão de 'double' para 'int', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.13 c)\Origem.cpp(6,6): warning C4101: 'seq': variável local não referenciada
+  ex. 2.13 c).vcxproj -> D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.13 c)\Debug\ex. 2.13 c).exe

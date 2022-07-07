@@ -1,0 +1,9 @@
+﻿  Origem.cpp
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.9 b)\Origem.cpp(28,10): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.9 b)\Origem.cpp(29,12): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.9 b)\Origem.cpp(30,13): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.9 b)\Origem.cpp(38,14): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.9 b)\Origem.cpp(39,11): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.9 b)\Origem.cpp(40,13): warning C4244: '=': conversão de 'double' para 'int', possível perda de dados
+MSVCRTD.lib(exe_main.obj) : error LNK2019: símbolo externo não resolvido, _main, referenciado na função "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.9 b)\Debug\ex. 2.9 b).exe : fatal error LNK1120: 1 externo não resolvidos

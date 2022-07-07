@@ -1,0 +1,5 @@
+﻿  Origem.cpp
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.15\Origem.cpp(8,12): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.15\Origem.cpp(20,11): warning C4244: '=': conversão de 'time_t' para 'double', possível perda de dados
+D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.15\Origem.cpp(22,11): warning C4244: '=': conversão de 'time_t' para 'double', possível perda de dados
+  ex. 2.15.vcxproj -> D:\STUDY\Year 1\Semester 2\PROG\Fichas\Ficha 2\ex. 2.15\Debug\ex. 2.15.exe
