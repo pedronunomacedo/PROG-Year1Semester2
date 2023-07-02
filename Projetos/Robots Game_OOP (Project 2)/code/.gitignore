@@ -1,0 +1,29 @@
+# Compiled object files
+**/*.o
+**/*.obj
+
+# Compiled dynamic libraries
+**/*.so
+**/*.dylib
+
+# Executables
+**/*.exe
+**/*.out
+
+# Build directories
+**/build/
+**/bin/
+
+# IDE-specific files and directories
+**/.vscode/
+**/.idea/
+**/*.user
+**/*.suo
+**/*.sln.docstates
+
+# Dependency directories
+**/vendor/
+
+# Other
+**/v16/
+**/Debug/
