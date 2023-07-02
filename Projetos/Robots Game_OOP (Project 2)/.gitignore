@@ -1,3 +1,7 @@
 .vs/
 **/.DS_Store
 Debug/
+**/.sln
+**/.vcxproj
+**/.vcxproj.filters
+**/.vcxproj.user
