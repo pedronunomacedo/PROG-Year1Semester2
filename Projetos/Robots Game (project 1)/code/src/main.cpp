@@ -3,8 +3,8 @@
 # include<string>
 # include<fstream>
 # include<vector>
-# include<ctime>;
-# include<iomanip>;
+# include<ctime>
+# include<iomanip>
 using namespace std;
 
 void rules() { // Print a quick explanation of the game.
@@ -19,7 +19,7 @@ void rules() { // Print a quick explanation of the game.
 }
 
 int Menu() { // Print the menu and ask for a option (user input). Check if it's a valid input or not (it can only be '0', '1' or '2') and return the intended option.
-	string option; bool valid_input{ true };
+	string option; bool valid_input = true ;
 	cout << " Please input the number of the option you want: " << endl << " 1) Rules" << endl << " 2) Play" << endl << " 0) Exit" << endl << " Option: "; cin >> option;
 
 	while (valid_input) {
@@ -39,7 +39,7 @@ int Menu() { // Print the menu and ask for a option (user input). Check if it's 
 }
 
 int Num_Maze() { // Ask for the number of the maze (user input) and check if it's a valid or not (it cannot have letters and has to be a number between 0 and 99). Return the intended maze number.
-	string num_maze; bool invalid_input{ true };
+	string num_maze; bool invalid_input = true ;
 	cout << endl << " Please input a number for the maze (0 to Go Back): "; cin >> num_maze;
 
 	while (invalid_input || stoi(num_maze) > 99) {
@@ -64,16 +64,16 @@ string Maze_Directory(int num_maze) { // Receive the number of the maze and retu
 	string maze_directory;
 
 	if ((num_maze >= 10 && num_maze <= 99) || to_string(num_maze) == "00" || to_string(num_maze) == "01" || to_string(num_maze) == "02" || to_string(num_maze) == "03" || to_string(num_maze) == "04" || to_string(num_maze) == "05" || to_string(num_maze) == "06" || to_string(num_maze) == "07" || to_string(num_maze) == "08" || to_string(num_maze) == "09") {
-		maze_directory = "MAZE_" + to_string(num_maze) + ".TXT";
+		maze_directory = string("../data/") + string("MAZE_") + to_string(num_maze) + string(".txt");
 	}
 	else if (num_maze > 0 && num_maze <= 9) {
-		maze_directory = "MAZE_0" + to_string(num_maze) + ".TXT";
+		maze_directory = string("../data/") + string("MAZE_0") + to_string(num_maze) + string(".txt");
 	}
 	return maze_directory;
 }
 
 bool Validate_Directory(string maze_directory) { // Validate if certain directory exists. Return 'true' or 'false'.
-	bool maze_exist{ true };
+	bool maze_exist = true ;
 
 	ifstream myfile(maze_directory);
 	if (!myfile.is_open()) {
@@ -106,7 +106,7 @@ string Movement() { // Print list of acceptable movements and ask the player for
 }
 
 int Change_y(string movement, vector <int> player_identification) { // Receive the intended movement and current player coordinates. Calculate and return the y coordinate of new position.
-	int y{ 0 };
+	int y = 0 ;
 
 	if (movement == "Q" || movement == "q") {
 		y = player_identification[1] - 1;
@@ -139,7 +139,7 @@ int Change_y(string movement, vector <int> player_identification) { // Receive t
 }
 
 int Change_x(string movement, vector <int> player_identification) { // Receive the intended movement and current player coordinates. Calculate and return the x coordinate of new position.
-	int x{ 0 };
+	int x = 0;
 
 	if (movement == "Q" || movement == "q") {
 		x = player_identification[0] - 1;
@@ -175,22 +175,22 @@ string Maze_Directory_Winners(int num_maze) { // Receive the number of the maze 
 	string winners;
 
 	if ((num_maze >= 10 && num_maze <= 99) || to_string(num_maze) == "00" || to_string(num_maze) == "01" || to_string(num_maze) == "02" || to_string(num_maze) == "03" || to_string(num_maze) == "04" || to_string(num_maze) == "05" || to_string(num_maze) == "06" || to_string(num_maze) == "07" || to_string(num_maze) == "08" || to_string(num_maze) == "09") {
-		winners = "MAZE_" + to_string(num_maze) + "_WINNERS.TXT";
+		winners = string("../data/") + string("MAZE_") + to_string(num_maze) + string("_WINNERS.txt");
 	}
 	else if (num_maze > 0 && num_maze <= 9) {
-		winners = "MAZE_0" + to_string(num_maze) + "_WINNERS.TXT";
+		winners = string("../data/") + string("MAZE_0") + to_string(num_maze) + string("_WINNERS.txt");
 	}
 	return winners;
 }
 
-string Generate_winners_line(string name, string elapsedTime) { // Receive the name of the player and time spent and generate the winner's line to be added to the winner's file. Return the winner's line according to the format wanted (ie. name            –   10).
-	string Winners_line{ name }; int name_size = name.size(); int num_spaces = 5 - elapsedTime.size();
+string Generate_winners_line(string name, string elapsedTime) { // Receive the name of the player and time spent and generate the winner's line to be added to the winner's file. Return the winner's line according to the format wanted (ie. name            ï¿½   10).
+	string Winners_line = name; int name_size = name.size(); int num_spaces = 5 - elapsedTime.size();
 
 	while (name_size < 15) {
 		Winners_line += " ";
 		name_size++;
 	}
-	Winners_line += " –";
+	Winners_line += " ï¿½";
 
 	while (num_spaces > 0) {
 		Winners_line += " ";
@@ -201,7 +201,7 @@ string Generate_winners_line(string name, string elapsedTime) { // Receive the n
 }
 
 bool PlayAgain(bool player_alive) { // Ask the user if he wants to play again. Check if the input is valid and return true or false. 
-	string answer; bool valid_answer{ false }, GoBack;
+	string answer; bool valid_answer = false, GoBack;
 	if (player_alive) { cout << endl << " Great job! Do you want to play again (Y or N) ? "; }
 	else { cout << endl << " Do you want to have another shot (Y or N)? "; } cin >> answer;
 
@@ -218,12 +218,12 @@ bool PlayAgain(bool player_alive) { // Ask the user if he wants to play again. C
 int main() {
 	for (int i = 0; i < 100; i++) { cout << endl; } 
 	cout << " Welcome to the Robots Game!" << endl << endl;
-	bool GoBack{ true };
+	bool GoBack = true ;
 	while (GoBack) { // Restart the program.
 		// Declaration of all variables used.
 		time_t time1, time2, elapsedTime;
-		int option, num_maze, num_line{ -1 }, num_robots_alive{ 0 }, robot_ID{ 0 }, x{ 0 }, y{ 0 }, x_robot{ 0 }, y_robot{ 0 }, size_vector_winners_file;
-		bool GoBack, maze_exist{ false }, winners_directory_exist, player_alive{ true }, not_allowed{ true }, score_inserted{ false };
+		int option, num_maze, num_line = -1 , num_robots_alive = 0, robot_ID = 0, x = 0, y = 0, x_robot = 0, y_robot = 0, size_vector_winners_file;
+		bool GoBack, maze_exist = false, winners_directory_exist, player_alive = true, not_allowed = true, score_inserted = false;
 		string maze_directory, line_maze, movement, name, winners_directory, winners_line, winners_file_line, number_to_compare, answer;
 		vector<int> player_identification(2); vector<string> vector_winnersFile;
 		ifstream maze_file;
@@ -347,7 +347,7 @@ int main() {
 					cout << " You WON! " << endl;
 					if (!winners_directory_exist) { // If there isn't a winner's file for the current maze create one (with header).
 						ofstream WinnersFile(winners_directory);
-						WinnersFile << "Player          – Time" << endl << "----------------------";
+						WinnersFile << "Player          ï¿½ Time" << endl << "----------------------";
 						WinnersFile.close();
 					}
 					cout << " What is your name (15 characters)? "; cin >> setw(15) >> name;

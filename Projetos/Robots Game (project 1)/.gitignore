@@ -3,4 +3,5 @@
 **/*.vcxproj 
 **/*.sln
 **/.DS_Store
-.vs
+.vs/
+.vscode/
