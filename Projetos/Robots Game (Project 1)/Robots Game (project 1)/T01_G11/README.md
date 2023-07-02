@@ -1,6 +1,6 @@
-# T01_G11
+# Robots Game (Project 1)
 
-### GROUP MEMBERS: 
+### GROUP MEMBERS (T01_G11): 
 - Duarte Filipe Campos Barbosa Lopes
 - Pedro Nuno Ferreira Moura de Macedo
 
