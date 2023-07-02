@@ -1,8 +1,8 @@
 # Robots Game (Project 1)
 
 ### GROUP MEMBERS (T01_G11): 
-- Duarte Filipe Campos Barbosa Lopes
-- Pedro Nuno Ferreira Moura de Macedo
+- [Duarte Lopes](https://github.com/duartelopes19)
+- [Pedro Macedo](https://github.com/pedronunomacedo)
 
 ### PROGRAM DEVELOPMENT STATE:
 * All the objetives were accomplished!
