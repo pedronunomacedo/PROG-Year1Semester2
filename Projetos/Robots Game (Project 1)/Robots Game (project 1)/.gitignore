@@ -1,0 +1,6 @@
+**/*.vcxproj.user 
+**/*.vcxproj.filters 
+**/*.vcxproj 
+**/*.sln
+**/.DS_Store
+.vs
